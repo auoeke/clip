@@ -1,0 +1,14 @@
+#!/bin/perl
+use strict;
+use warnings;
+
+my $clipboard = sprintf("%s/clipboard", $ENV{"TMPDIR"} // "/tmp");
+
+if (@ARGV) {
+    open(my $file, ">", $clipboard) or die("$!");
+    print($file(join(" ", @ARGV)));
+} else {
+    open(my $file, "<", $clipboard) or die("$!");
+    print(<$file>);
+}
+

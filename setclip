@@ -1,0 +1,13 @@
+#!/bin/perl
+use strict;
+use warnings;
+
+my $value = "";
+
+while (<>) {
+    $value .= $_;
+}
+
+open(my $file, ">", sprintf("%s/clipboard", $ENV{"TMPDIR"} // "/tmp")) or die("$!");
+print($file($value));
+
