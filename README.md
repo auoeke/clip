@@ -1,3 +1,5 @@
+clip is a simple clipboard manager that does not depend on a window system like X. I made it for my headless server.
+
 The path of the clipboard file is [`${TMPDIR:-/tmp}/clipboard`](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html).
 
 `clip` and `setclip` should be executable and in a directory in `$PATH`.
