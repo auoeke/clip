@@ -18,7 +18,7 @@ test1
 ```
 
 ### Neovim
-Neovim can be configured to use `clip` and `setclip` by setting `g:clipboard` in `${XDG_CONFIG_DIR:-$HOME/.config}`:
+Neovim can be configured to use `clip` and `setclip` by setting `g:clipboard` in `${XDG_CONFIG_DIR:-$HOME/.config}/nvim/init.vim`:
 ```vim
 let g:clipboard = {
             \     'name': 'clip',
